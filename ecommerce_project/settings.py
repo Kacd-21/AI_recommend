@@ -26,13 +26,13 @@ SECRET_KEY = 'p_b^-p3!lz9rqokpcfh*zd$e@g$qsmml$5j4lm*%z+((r%%*ib'
 DEBUG = True
 
 # Environment variables
-SECRET_KEY = os.getenv('m2@_7)5@2fz*mgm)vmd!sb_js+#y&$=$y(g@v5-=5k8vx_le6%', "fallback_dev_secret")
+SECRET_KEY = os.getenv('SECRET_KEY', 'fallback_dev_secret')
 DEBUG = False
-ALLOWED_HOSTS = ['ai-recommender-k6wy.onrender.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['AI_recommend.onrender.com', 'localhost', '127.0.0.1']
 
 # Add your environment variables for MongoDB and OpenAI
-OPENAI_KEY = os.getenv("dab02bcf11b83362167ef1634b859e6a")
-MONGO_URI = os.getenv("d5f00a3894197fed3ab7df49986a603c")
+OPENAI_KEY = os.getenv("OPENAI_KEY") #dab02bcf11b83362167ef1634b859e6a"
+MONGO_URI = os.getenv("MONGO_URI") #d5f00a3894197fed3ab7df49986a603c
 
 
 ALLOWED_HOSTS = []
